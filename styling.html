@@ -43,6 +43,7 @@ Description : Understanding Old-School HTML Layouts.
 
         .block-demo {
             /*Ensure .block-demo centers its text.*/
+            text-align: center;
         }
 
         /*
@@ -56,22 +57,32 @@ Description : Understanding Old-School HTML Layouts.
             Add CSS that I stick the first child to the left side of the screen.
             */
             color: red;
+            float: left;
             
         }
 
         .block-demo > .inline-demo:nth-child(2) {            
             color: blue;
+            float: center;
         }
 
         /* Add your css for the thrid child here. */
 
+        .block-demo > .inline-demo:nth-child(3) {            
+            color: green;
+            float: right;
+        }
+
         .image-demo {
             /* Modify the .image-demo class to adjust the image's width to 50% of the screen. */
             border: 2px solid blue;
+            width: 50%;
         }
 
         .hover-demo:hover {
             /*Create a hover effect for .hover-demo that changes its color to blue and cursor to grabbing.*/
+            color: blue;
+            cursor: grab;
         }
     </style>
 </head>
